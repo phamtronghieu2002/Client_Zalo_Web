@@ -1,0 +1,40 @@
+{ 
+   "Login":{
+        "first_title":"Log in to your Zalo account",
+        "second_title":" to connect to the Zalo Web application",
+        "tab":{
+            "login":"Login",
+            "register":"Register"
+        },
+        "placeholder":{
+            "phone":"Phone number",
+            "password":"Enter your Password"
+        },
+        "button":{
+            "login":"Login",
+            "register":"Register",
+            "forgot_password":"Forgot password?",
+            "send_otp":"Send OTP"
+        },
+        "modal":{
+            "title":"Enter the OTP code",
+            "content":"Please enter the OTP code sent to your phone number",
+            "button":{
+                "cancel":"Cancel",
+                "confirm":"Confirm"
+            }
+        }
+   },
+
+   "Register":{
+    "placeholder_username":"enter your username",
+    "placeholder_password":"enter your password",
+    "placeholder_repassword":"confirm password"
+},
+    "Home":{
+
+        
+
+    }
+  
+}

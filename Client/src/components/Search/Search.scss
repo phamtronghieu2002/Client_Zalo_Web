@@ -1,0 +1,75 @@
+#wp_search {
+    height: 64px;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+    padding: 0 16px;
+
+    input {
+        width: 208px;
+        height: 32px;
+        background-color: #eaedf0;
+        border: 1px solid #eaedf0;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.5;
+        line-height: 32px;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px;
+        &:focus {
+            background-color: #fff;
+            outline: none;
+            border-color: #0068ff;
+        }
+    }
+
+    .search_icon {
+        position: absolute;
+        top: 51%;
+        transform: translateY(-50%);
+        left: 25px;
+        color: black;
+        font-size: 0.875rem;
+        width: 0.875rem;
+        height: 0.875rem;
+    }
+    .action {
+        border: none;
+        outline: none;
+        background: none;
+        max-width: 32px;
+        min-width: 32px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 1rem;
+        width: fit-content;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .btn_close {
+        height: 32px;
+        color: black;
+        border: none;
+        outline: none;
+        width: 85px;
+        position: relative;
+        left: 4px;
+        background: none;
+        border-radius: 3px;
+        cursor: pointer;
+
+        font-size: 1rem;
+   
+
+        &:hover {
+            background-color: #eaedf0;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import './reset.scss';
+@import './variable.scss';
+
+.zmenu-separator {
+    height: 1px;
+    background: #d6dbe1;
+    margin: 4px;
+}
+
+.menu_item_poper {
+
+    .sub_menu_poper {
+        display: none;
+        width: 100px;
+        box-shadow: 4px 3px 10px 3px rgb(0 0 0 / 20%);
+        border: 1px solid #d6dbe1;
+        border-radius: 4px;
+        position: absolute;
+        left: 228px;
+        top: 0px;
+    }
+    height: 36px;
+    min-width: 112px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #081c36;
+    position: relative;
+    margin: 0 -8px;
+    background-color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    &:hover {
+        background-color: #f5f5f5;
+        .sub_menu_poper{
+            display: block;
+        }
+    }
+}

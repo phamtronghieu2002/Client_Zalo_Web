@@ -1,0 +1,75 @@
+#wp_SidebarNav{
+    flex-direction: column;
+    display: flex;
+    z-index: 11;
+    width: 64px;
+    height: 100%;
+    background-color: #0091ff;
+.wp_avt{
+
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    padding-top: 32px;
+    box-sizing: border-box;
+    
+
+    .a-child
+    {
+
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        min-height: 48px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    object-fit: cover;
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1.5;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 50%;
+    }
+}
+
+.nav_item
+{
+    
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    .nav_icon
+    {
+        color: white;
+    font-size: 20px;
+    }
+    .nav_num
+    {
+        position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: white;
+
+    }
+
+}
+.nav_message
+{
+}
+
+
+}

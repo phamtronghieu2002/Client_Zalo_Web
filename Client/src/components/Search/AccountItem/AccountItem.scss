@@ -1,0 +1,24 @@
+#account_item_search{
+
+ &:hover{
+    background: #f3f5f6;
+ }
+    height: 72px;
+    left: 0px;
+padding: 0 16px;
+display: flex;
+align-items: center;
+gap:10px;
+    width: 100%;
+    img
+    {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .display_name
+    {
+        cursor: pointer;
+    }
+}

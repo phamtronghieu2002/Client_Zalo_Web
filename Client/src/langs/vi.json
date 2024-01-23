@@ -1,0 +1,32 @@
+{
+  "Login":{
+    "first_title":"Đăng nhập tài khoản Zalo ",
+    "second_title":"để kết nối với ứng dụng Zalo Web",
+    "tab":{
+        "login":"Đăng nhập",
+        "register":"Đăng ký"
+    },
+    "placeholder":{
+        "phone":"Số điện thoại",
+        "password":"Nhập Mật khẩu"
+    },
+    "button":{
+        "login":"Đăng nhập",
+        "register":"Đăng ký",
+        "forgot_password":"Quên mật khẩu?",
+        "send_otp":"gửi otp xác nhận"
+    },
+    "modal":{
+        "title":"Nhập mã OPT",
+        "content":"Hãy nhập mã OPT được gởi đến số điện thoại của bạn",
+        "button":{
+            "cancel":"Hủy",
+            "confirm":"xác nhận"
+        }
+    }
+},"Register":{
+    "placeholder_username":"Tên đăng nhập",
+    "placeholder_password":"Mật Khẩu",
+    "placeholder_repassword":"Nhập lại mật khẩu"
+}
+}
