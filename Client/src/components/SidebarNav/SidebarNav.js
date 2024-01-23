@@ -19,7 +19,7 @@ export default function SidebarNav() {
     }, []);
 
     const handleClickOutside = (event) => {
-        // Kiểm tra xem có popper nào đang mở hay không
+    
         if (isOpenPopper.user || isOpenPopper.setting) {
           console.log('click outside');
         
@@ -32,7 +32,7 @@ export default function SidebarNav() {
       };
 
     const handleUserClickOpenPopperUser = (event) => {
-        // Ngăn chặn sự kiện click từ việc propagate lên trên và đóng popper setting
+        
         event.stopPropagation();
         setIsOpenPopper({
             setting: false,
@@ -40,13 +40,15 @@ export default function SidebarNav() {
         });
     };
     const handleUserClickOpenPopperSetting = (event) => {
-        // Ngăn chặn sự kiện click từ việc propagate lên trên và đóng popper setting
+       
         event.stopPropagation();
         setIsOpenPopper({
             setting: true,
             user: false,
         });
     };
+
+    
     return (
         <div id="wp_SidebarNav">
             {isOpenPopper.user && <UserPopper />}

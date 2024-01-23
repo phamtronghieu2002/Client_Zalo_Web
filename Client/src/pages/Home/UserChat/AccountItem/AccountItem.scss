@@ -1,0 +1,100 @@
+#account_item_chat{
+
+    &:hover{
+        background-color: #f5f5f5;
+        .timer_message{
+            display: none;
+        }
+        .detail_btn{
+            display: block;
+        }
+    }
+    span{
+        cursor: pointer;
+    }
+    height: 74px;
+    padding: 0 16px;
+    align-items: center;
+    .avatar{
+        width: 60px;
+        .single_chat_avatar{
+            width: 44px;
+            height: 44px;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            object-fit: cover;
+            font-size: 0.75rem;
+            font-weight: 500;
+            line-height: 1.5;
+            border: 1px solid #fff;
+            box-sizing: border-box;
+            border-radius: 50%;
+        }
+
+        
+    }
+    .infor{
+
+
+        
+    }
+    .display_name{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+
+        
+    }
+    .last_message{
+
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 1.5;
+        
+    }
+    .timer_message{
+        font-size: 0.75rem;
+        position: absolute;
+        right: 15px;
+        top: 7px;
+
+        
+    }
+    .detail_btn{
+
+        display: none;
+        outline: none;
+        border: none;
+        text-align: center;
+  
+        font-size: 11px;
+        font-weight: bold;
+        position: absolute;
+
+        right: 23px;
+        top: 5px;
+        
+    }
+  
+    .num_message_miss{
+        position: absolute;
+        right: 21px;
+        width: 17px;
+        height: 17px;
+        background-color: #ff0000;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        color: white;
+        bottom: 23px;
+        
+    }
+
+
+
+}
