@@ -1,37 +1,44 @@
-#wp_user_chat{
+#wp_user_chat {
+    width: 312px;
+    border-right: 1px solid #e0e0e0;
+    overflow: scroll;
 
-        width: 312px;
-        border-right: 1px solid #e0e0e0;
-     
-        .filter_chat
-        {
-
-            
-                display: flex;
-                padding:0 16px;
-                gap:10px;
-                .filter_item{
-                        color:#7589a3;
-                        font-size: .875rem;
-                        font-weight: 500;
-                        line-height: 1.5;
-                        display: block;
-                        cursor: pointer;
-                  
-
-
-                }
-          
-
-                .active{
-                        color:#005ae0;
-                        border-bottom: 2px solid #1600e0;
-               
-
-                }
+    .filter_chat {
+        z-index: 0;
+        position: relative;
+        display: flex;
+        padding: 0 16px;
+        gap: 10px;
+        .filter_item {
+            color: #7589a3;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 1.5;
+            display: block;
+            cursor: pointer;
         }
 
+        .active {
+            color: #005ae0;
+            border-bottom: 2px solid #1600e0;
+        }
+    }
+    .usersChat {
+        height: 100vh;
+        position: relative;
+        z-index: 0;
+
+        .account_item_chat {
+            @for $i from 1 through 4 {
+                &:nth-child(#{$i}) {
+                    .wp_detail_user_chat_popper {
+                        top:110px;
+                      
 
 
-
+                    }
+                }
+            }
+        }
+    }
 }

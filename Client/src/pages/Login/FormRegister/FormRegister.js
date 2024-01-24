@@ -34,7 +34,7 @@ export default function FormRegister() {
                     className="input-group-text"
                     id="addon-wrapping"
                 >
-                    <i class="fa-solid fa-user"></i>
+                    <i classname="fa-solid fa-user"></i>
                     {/* <i className="fa-solid fa-lock"></i> */}
                 </span>
                 <input
@@ -78,7 +78,7 @@ export default function FormRegister() {
                     className="input-group-text"
                     id="addon-wrapping"
                 >
-                  <i class="fa-solid fa-check"></i>
+                  <i classname="fa-solid fa-check"></i>
                 </span>
                 <input
                     value={dataForm.confirmPassword}

@@ -1,25 +1,46 @@
 import './AccountItem.scss';
-function AccountItem() {
+import DetailUserChatPopper from '../../../../components/Popper/DetailUserChatPopper/DetailUserChatPopper';
+import { useEffect, useState } from 'react';
+import React from 'react';
+function AccountItem({id,onDetail,openPopper}) {
+    
+      const [openDetail,setOpenDetail]=useState(false);
+useEffect(() => {
+
+    if(openPopper===id){
+        setTimeout(() => {
+            setOpenDetail(true);
+        }, 200);
+    }else{
+        openDetail &&  setOpenDetail(false);
+    }
+
+},[openPopper])
+
+
     return (
-        <div id="account_item_chat" className='d-flex position-relative'>
+        <div  className="d-flex position-relative account_item_chat">
+          {openDetail && <DetailUserChatPopper/> }  
             <div className="avatar">
                 <img
-                className='single_chat_avatar'
-                src="https://s120-ava-talk.zadn.vn/0/d/9/7/12/120/e9605516219e69b3d6465839d961b04e.jpg"
-                alt="avt"
+                    className="single_chat_avatar"
+                    src="https://t4.ftcdn.net/jpg/05/49/98/39/360_F_549983970_bRCkYfk0P6PP5fKbMhZMIb07mCJ6esXL.jpg"
+                    alt="avt"
                 />
             </div>
             <div className="infor">
                 <span className="display_name">Pham Hieu</span>
-                <br/>
+                <br />
                 <span className="last_message">Hello</span>
             </div>
             <span className="timer_message">5 phut</span>
-            <button className="detail_btn">...</button>
-      
-                  <div className="num_message_miss">1</div>
+            <button
+            onClick={onDetail}
+            className="detail_btn">...</button>
+
+            <div className="num_message_miss">1</div>
         </div>
     );
 }
 
-export default AccountItem;
+export default React.memo(AccountItem);

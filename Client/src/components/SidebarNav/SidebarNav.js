@@ -13,22 +13,16 @@ export default function SidebarNav() {
     useEffect(() => {
         window.addEventListener('click', handleClickOutside);
 
-        return () => {
-            window.removeEventListener('click', handleClickOutside);
-        };
+
     }, []);
 
     const handleClickOutside = (event) => {
-    
-        if (isOpenPopper.user || isOpenPopper.setting) {
-          console.log('click outside');
-        
             setIsOpenPopper({
               user: false,
               setting: false,
             });
         
-        }
+        
       };
 
     const handleUserClickOpenPopperUser = (event) => {
@@ -48,7 +42,7 @@ export default function SidebarNav() {
         });
     };
 
-    
+
     return (
         <div id="wp_SidebarNav">
             {isOpenPopper.user && <UserPopper />}
@@ -62,25 +56,25 @@ export default function SidebarNav() {
                     />
                 </div>
                 <Link className=" nav_item position-relative" to={'/'}>
-                    <i class="fa-solid fa-message nav_icon"></i>
+                    <i className="fa-solid fa-message nav_icon"></i>
                     {/* circle num */}
                     <div className="nav_num">1</div>
                 </Link>
 
                 <Link className=" nav_item position-relative" to={'/'}>
-                    <i class="fa-solid fa-book nav_icon"></i>
+                    <i className="fa-solid fa-book nav_icon"></i>
                 </Link>
             </div>
 
             <div className=" nav_item position-relative">
-                <i class="fa-solid fa-toolbox nav_icon"></i>
+                <i className="fa-solid fa-toolbox nav_icon"></i>
             </div>
 
             <div
                 onClick={handleUserClickOpenPopperSetting}
                 className=" nav_item position-relative"
             >
-                <i class="fa-solid fa-gear nav_icon"></i>
+                <i className="fa-solid fa-gear nav_icon"></i>
                 {isOpenPopper.setting && <SettingPopper />}
             </div>
         </div>

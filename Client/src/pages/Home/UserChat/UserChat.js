@@ -1,10 +1,11 @@
-import Search from '../../../components/Search/Search';
-import { useState } from 'react';
-import clsx from 'clsx';
 import './UserChat.scss';
+import { useState ,useMemo} from 'react';
+import Search from '../../../components/Search/Search';
+import clsx from 'clsx';
 import AccountItem from './AccountItem/AccountItem';
 const UserChat = () => {
     const [acitve, setActive] = useState(1);
+    const [openPopper,setOpenPopper]=useState("");
 
     return (
         <div id="wp_user_chat">
@@ -18,7 +19,16 @@ const UserChat = () => {
                 </span>
             </div>
             <div className="usersChat">
-                <AccountItem />
+          {
+            [1,2,3,4,5,6,7,8,9,10].map((item,index)=>(
+                <AccountItem 
+                key={index} 
+                id={item}
+                openPopper={openPopper}
+                onDetail={()=>setOpenPopper(item)}
+                />
+                ))
+          }
             </div>
         </div>
     );

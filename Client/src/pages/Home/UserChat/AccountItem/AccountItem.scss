@@ -1,4 +1,4 @@
-#account_item_chat{
+.account_item_chat{
 
     &:hover{
         background-color: #f5f5f5;
@@ -7,6 +7,7 @@
         }
         .detail_btn{
             display: block;
+          
         }
     }
     span{
@@ -73,15 +74,18 @@
         font-size: 11px;
         font-weight: bold;
         position: absolute;
-
+        background: none;
         right: 23px;
         top: 5px;
+        &:hover{
+            background: #d8eff0;
+        }
         
     }
   
     .num_message_miss{
         position: absolute;
-        right: 21px;
+        right: 24px;
         width: 17px;
         height: 17px;
         background-color: #ff0000;
