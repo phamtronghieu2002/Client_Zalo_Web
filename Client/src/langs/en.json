@@ -1,40 +1,78 @@
-{ 
-   "Login":{
-        "first_title":"Log in to your Zalo account",
-        "second_title":" to connect to the Zalo Web application",
-        "tab":{
-            "login":"Login",
-            "register":"Register"
+{
+    "Login": {
+        "first_title": "Log in to your Zalo account",
+        "second_title": " to connect to the Zalo Web application",
+        "tab": {
+            "login": "Login",
+            "register": "Register"
         },
-        "placeholder":{
-            "phone":"Phone number",
-            "password":"Enter your Password"
+        "placeholder": {
+            "phone": "Phone number",
+            "password": "Enter your Password"
         },
-        "button":{
-            "login":"Login",
-            "register":"Register",
-            "forgot_password":"Forgot password?",
-            "send_otp":"Send OTP"
+        "button": {
+            "login": "Login",
+            "register": "Register",
+            "forgot_password": "Forgot password?",
+            "send_otp": "Send OTP"
         },
-        "modal":{
-            "title":"Enter the OTP code",
-            "content":"Please enter the OTP code sent to your phone number",
-            "button":{
-                "cancel":"Cancel",
-                "confirm":"Confirm"
+        "modal": {
+            "title": "Enter the OTP code",
+            "content": "Please enter the OTP code sent to your phone number",
+            "button": {
+                "cancel": "Cancel",
+                "confirm": "Confirm"
             }
         }
-   },
+    },
 
-   "Register":{
-    "placeholder_username":"enter your username",
-    "placeholder_password":"enter your password",
-    "placeholder_repassword":"confirm password"
-},
-    "Home":{
-
-        
-
-    }
-  
+    "Register": {
+        "placeholder_username": "enter your username",
+        "placeholder_password": "enter your password",
+        "placeholder_repassword": "confirm password"
+    },
+    "home": {
+        "popper": {
+            "user": {
+                "profile": "Profile",
+                "logout": "Logout",
+                "setting": "Setting"
+            },
+            "setting": {
+                "account_information": "Account information",
+                "setting": "Setting",
+                "data": "Data",
+                "tools": "Tools",
+                "language": "Language",
+                "logout": "Logout"
+            }
+        },
+        "fillter": {
+            "all": "All",
+            "unread": "Unread",
+            "read": "Read",
+            "star": "Star",
+            "trash": "Trash"
+        },
+        "search": {
+            "placeholder": "Search"
+        },
+        "account_chat_item": {
+            "timmer": {
+                "day": "day",
+                          "hour": "hour",
+                "minute": "minute",
+                "second": "second"
+            },
+            "status": {
+                "online": "online",
+                "offline": "offline"
+            }
+        },
+        "social_list": {
+            "friend": "Friend list",
+            "group": "Group list",
+            "request_invite": "Request invite"
+        }
+    }   
 }

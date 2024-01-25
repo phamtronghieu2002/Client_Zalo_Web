@@ -1,6 +1,6 @@
 const paths={
     home:"/",
-    detail:"/detail/:id",
+    phonebook:"/phonebook",
     login:"/login",
 }
 

@@ -1,32 +1,74 @@
 {
-  "Login":{
-    "first_title":"Đăng nhập tài khoản Zalo ",
-    "second_title":"để kết nối với ứng dụng Zalo Web",
-    "tab":{
-        "login":"Đăng nhập",
-        "register":"Đăng ký"
+    "Login": {
+        "first_title": "Đăng nhập tài khoản Zalo ",
+        "second_title": "để kết nối với ứng dụng Zalo Web",
+        "tab": {
+            "login": "Đăng nhập",
+            "register": "Đăng ký"
+        },
+        "placeholder": {
+            "phone": "Số điện thoại",
+            "password": "Nhập Mật khẩu"
+        },
+        "button": {
+            "login": "Đăng nhập",
+            "register": "Đăng ký",
+            "forgot_password": "Quên mật khẩu?",
+            "send_otp": "gửi otp xác nhận"
+        },
+        "modal": {
+            "title": "Nhập mã OPT",
+            "content": "Hãy nhập mã OPT được gởi đến số điện thoại của bạn",
+            "button": {
+                "cancel": "Hủy",
+                "confirm": "xác nhận"
+            }
+        }
     },
-    "placeholder":{
-        "phone":"Số điện thoại",
-        "password":"Nhập Mật khẩu"
+    "Register": {
+        "placeholder_username": "Tên đăng nhập",
+        "placeholder_password": "Mật Khẩu",
+        "placeholder_repassword": "Nhập lại mật khẩu"
     },
-    "button":{
-        "login":"Đăng nhập",
-        "register":"Đăng ký",
-        "forgot_password":"Quên mật khẩu?",
-        "send_otp":"gửi otp xác nhận"
-    },
-    "modal":{
-        "title":"Nhập mã OPT",
-        "content":"Hãy nhập mã OPT được gởi đến số điện thoại của bạn",
-        "button":{
-            "cancel":"Hủy",
-            "confirm":"xác nhận"
+    "home": {
+        "popper": {
+            "user": {
+                "profile": "thông tin cá nhân",
+                "logout": "Đăng xuất",
+                "setting": "Cài đặt"
+            },
+            "setting": {
+                "account_information": "Thông tin tài khoản",
+                "setting": "Cài đặt",
+                "data": "Dữ liệu",
+                "tools": "Công cụ",
+                "language": "Ngôn ngữ",
+                "logout": "Đăng xuất"
+            }
+        },
+        "fillter": {
+            "all": "Tất cả",
+            "unread": "Chưa đọc"
+        },
+        "search": {
+            "placeholder": "Tìm kiếm"
+        },
+        "account_chat_item": {
+            "timmer": {
+                "day": "ngày",
+                "hour": "giờ",
+                "minute": "phút",
+                "second": "giây"
+            },
+            "status": {
+                "online": "Hoạt động",
+                "offline": "Không hoạt động"
+            }
+        },
+        "social_list": {
+            "friend": "Danh sách bạn bè",
+            "group": "Danh sách nhóm",
+            "request_invite": "Lời mời kết bạn"
         }
     }
-},"Register":{
-    "placeholder_username":"Tên đăng nhập",
-    "placeholder_password":"Mật Khẩu",
-    "placeholder_repassword":"Nhập lại mật khẩu"
-}
 }

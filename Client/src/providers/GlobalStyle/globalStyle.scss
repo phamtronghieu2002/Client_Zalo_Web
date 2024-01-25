@@ -1,14 +1,14 @@
 @import './reset.scss';
 @import './variable.scss';
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 19px;
   }
 
   ::-webkit-scrollbar-track {
     background-color: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: #d6dee1;
+    background-color: #bbbbbb;
     border-radius: 20px;
     border: 6px solid transparent;
     background-clip: content-box;

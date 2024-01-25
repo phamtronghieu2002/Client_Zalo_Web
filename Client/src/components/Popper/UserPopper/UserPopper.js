@@ -1,11 +1,15 @@
 import './UserPoper.scss';
 import ManuItemPopper from '../MenuItemPopper/MenuItemPopper';
-const main_menu = [
-    { title: 'Hồ Sơ Của bạn', callback: () => {} },
-    { title: 'Cài đặt', callback: () => {} },
-];
-const foot_menu = [{ title: 'Đăng xuất', callback: () => {} }];
+import {useLang} from "..//..//..//hooks"
+
+
 function UserPopper() {
+const {t} = useLang();
+    const main_menu = [
+        { title: t('home.popper.user.profile'), callback: () => {} },
+        { title:t('home.popper.user.setting'), callback: () => {} },
+    ];
+    const foot_menu = [{ title: t('home.popper.user.logout'), callback: () => {window.location.href="/login"} }];
     return (
         <div id="wp_popper_user">
             <h4 className="fw-bold ps-1">Phạm Trọng Hiếu</h4>

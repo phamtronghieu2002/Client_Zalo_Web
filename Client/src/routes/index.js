@@ -1,5 +1,5 @@
 import configs from "../configs"
-import { Home,Login } from "../pages"
+import { Home,Login,Phonebook } from "../pages"
 const PublicRoutes=[
   {
     path:configs.paths.login,
@@ -8,11 +8,15 @@ const PublicRoutes=[
 ]
 
 const PrivateRoutes=[
+
+  {
+    path:configs.paths.phonebook,
+    element:<Phonebook/>
+  },
   {
     path:configs.paths.home,
     element:<Home/>
   },
-
 ]
 
 

@@ -1,0 +1,31 @@
+.phonebook_account_item_search {
+    height: 72px !important;
+    padding: 0 16px;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &::before{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        width: calc(100% - 72px);
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    &:hover{
+        background: #f0f0f0;
+    }
+    .avatar{
+      
+        img{
+
+            border-radius: 50%;
+        }
+    }
+}

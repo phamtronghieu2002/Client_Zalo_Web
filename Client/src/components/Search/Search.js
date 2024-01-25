@@ -29,7 +29,7 @@ export default function Search() {
                 </button>
             ) : (
                 <>
-                    <button className="user_plus action">
+                    <button className="user_plus action_btn">
                         <img
                             width="24"
                             height="24"
@@ -37,7 +37,7 @@ export default function Search() {
                             alt="external-user-plus-users-thin-kawalan-studio"
                         />{' '}
                     </button>
-                    <button className="group_plus action">
+                    <button className="group_plus action_btn">
                         <img
                             width="80"
                             height="80"

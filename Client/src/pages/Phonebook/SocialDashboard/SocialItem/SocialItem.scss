@@ -1,0 +1,18 @@
+.social_item{
+
+
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    height: 56px;
+    padding: 0 18px;
+    color: #081c36;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:hover{
+        background-color: #f1f1f1;
+    }
+}

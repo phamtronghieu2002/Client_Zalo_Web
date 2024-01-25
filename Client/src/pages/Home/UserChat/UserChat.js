@@ -1,5 +1,5 @@
 import './UserChat.scss';
-import { useState ,useMemo} from 'react';
+import { useState} from 'react';
 import Search from '../../../components/Search/Search';
 import clsx from 'clsx';
 import AccountItem from './AccountItem/AccountItem';

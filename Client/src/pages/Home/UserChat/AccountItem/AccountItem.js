@@ -2,10 +2,15 @@ import './AccountItem.scss';
 import DetailUserChatPopper from '../../../../components/Popper/DetailUserChatPopper/DetailUserChatPopper';
 import { useEffect, useState } from 'react';
 import React from 'react';
+import { useLang } from '../../../../hooks';
 function AccountItem({id,onDetail,openPopper}) {
-    
+
+    const { t } = useLang();
       const [openDetail,setOpenDetail]=useState(false);
+
 useEffect(() => {
+
+    window.addEventListener("click",()=>setOpenDetail(false));
 
     if(openPopper===id){
         setTimeout(() => {
@@ -33,7 +38,7 @@ useEffect(() => {
                 <br />
                 <span className="last_message">Hello</span>
             </div>
-            <span className="timer_message">5 phut</span>
+            <span className="timer_message">{`5 ${t('home.account_chat_item.timmer.day')}`}</span>
             <button
             onClick={onDetail}
             className="detail_btn">...</button>
